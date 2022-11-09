@@ -9,10 +9,6 @@ This is an adaptive portfolio site called Kelvin. Developed the site with HTML, 
    <img src="https://img.shields.io/badge/License-none-red" alt="License">
 </p>
 
-## About
-
-About Text Here
-
 ## Documentation
 
 Documentation Here
