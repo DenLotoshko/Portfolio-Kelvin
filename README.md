@@ -11,7 +11,7 @@ This is an adaptive portfolio site called Kelvin. Developed the site with HTML, 
 
 ## Documentation
 
-- **-** **'AOS-library'** - Helpful library to animate on scroll.
+-**'AOS-library'** - Helpful library to animate on scroll.
 
 ## Distribute
 
