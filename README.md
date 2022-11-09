@@ -14,7 +14,7 @@ This is an adaptive portfolio site called Kelvin. Developed the site with HTML, 
 - **'AOS-library'** - Helpful library to animate on scroll.
 - **'AOS-link'** - https://michalsnik.github.io/aos/  
 - **'How to add AOS to your site'** - 1.Go to AOS web-site(link is above);
-                                      2.Scroll to the bottom. There you can see an instruction: I.Install using Yarn, Npm, Bower
+- 2.Scroll to the bottom. There you can see an instruction: I.Install using Yarn, Npm, Bower
                                                                                                 II.CDN sources(copy all for CSS and JS) 
                                                                                                 III.Initialize AOS(write (AOS.init();) on the bottom of your JS                                                                                                     document)
                                       3.Copy (data-aos="fade-up") or something you liked and paste into your content.
