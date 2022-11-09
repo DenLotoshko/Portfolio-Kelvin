@@ -1,0 +1,293 @@
+@import "./reset.css";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+
+body{
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+}
+
+
+.container{
+    max-width: 1230px;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+
+
+/* -----header----- */
+
+.header{
+    padding-top: 46px;
+    background-color: #F1F1F1;
+}
+
+.header-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    margin-bottom: 76px;
+}
+
+.logo{
+    position: relative;
+    padding: 0 12px 3px 0;
+
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 100%;
+    color: black; 
+    
+}
+.logo span{
+    position: relative;
+    display: inline-block;
+    animation: flip 2s infinite;
+    animation-delay: calc(0.4s * var (--flip));
+}
+.logo::after{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    content: "";
+    display: block;
+    width: 8px;
+    height: 8px;
+    background-color:#FDA300;
+    border-radius: 50%;
+    animation: flip 2s infinite;
+    animation-delay: calc(0.4s * var (--flip));
+}
+@keyframes flip{
+    0%,
+    80%{
+        transform: rotateY(360deg);
+    }
+}
+
+
+
+/*------------ Nav -------*/
+
+
+.nav-list{
+    display: flex;
+    column-gap: 50px;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+
+.nav-link{
+    color: black;
+    transition: color 0.2s ease-in, top 0.2s ease-in;
+}
+
+.nav-link:hover, .nav-link:focus{
+    color: rgb(70, 69, 69);
+}
+.nav-link:active{
+    position: relative;
+    top: 2px;
+    color: black;
+}
+
+
+
+/* ------------- Nav Button ---------------- */
+
+.nav-button{
+    display: none;
+}
+
+.burger{
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.burger:hover{
+    cursor: pointer;
+}
+
+.burger span{
+    transition: all 0.3s;
+    height: 3px;
+    background-color: black;
+    display: block;
+    width: 30px;
+    margin: 3px; 
+}
+
+.first{
+    transform: translate(6px, -1px ) rotate(45deg);
+    transform-origin: left top;
+}
+
+.middle{
+    transform: scale(0);
+}
+
+.last{
+    transform: translate(-3px, -20px) rotate(-45deg);
+    transform-origin: right bottom;
+}
+
+
+/*----------------- Header content -------------- */
+
+
+
+
+.header-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    column-gap: 30px
+}
+
+.header-content{
+    margin-top: 124px;
+    max-width: 500px;
+}
+
+
+.head{
+    margin-bottom:20px ;
+    font-weight: 600;
+    font-size: 44px;
+}
+
+.header-content p{
+    line-height: 2;
+}
+
+
+/* --------- Service ----------- */
+
+
+.services{
+    padding: 90px 0;
+}
+
+
+.services-row{
+    display: flex; 
+    row-gap: 60px;
+    column-gap: 30px;   
+    flex-wrap: wrap; 
+}
+
+.service-card{
+    flex: 1 1 0; /* 1-Не може забирати місце, 1-Не може ділитися місцем, 0-базовий розмір(стільки місця скільки треба) */
+    min-width: 315px;
+}
+
+.service-card-img {
+    margin-bottom: 30px;
+}
+.service-card-title {
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+
+.service-card p{
+    line-height: 2;
+}
+
+
+/* ---------- Portfolio -------------- */
+
+
+.portfolio {
+    padding:90px 0; 
+    background-color: #F1F1F1;
+}
+.container {
+
+}
+.portfolio-title {
+    text-align: center;
+    margin-bottom: 70px;
+}
+.title-1 {
+    font-size: 34px;
+    font-weight: 600;
+}
+.project {
+    text-align: center;
+}
+.project + .project{     /*Робить так,що у першого немає (чогось), але є у другого та інших  */
+     margin-top: 90px;
+}
+.project-img {
+    margin-bottom: 40px;
+}
+.project-title {
+    font-size: 18px;
+}
+.project-title a{
+    color: black;
+    text-decoration: underline;
+}
+
+
+/* ------------- Footer ---------------- */
+
+
+.contacts {
+    padding: 90px 0;
+    text-align: center;
+}
+
+.contacts-title {
+    margin-bottom: 40px;
+}
+.title-2 {
+    font-size: 34px;
+    font-weight: 600
+}
+.contacts-content { 
+    margin-bottom: 40px; 
+    font-size: 18px;
+}
+.contacts-button {
+    margin-bottom: 80px;
+}
+.btn {
+    display: inline-block;
+    padding: 7px 22px;
+    background-color: black;
+    border-radius: 30px;
+    
+
+    font-size: 18px;
+    color: white;
+
+    transition: background-color 0.2s ease-in, top 0.2s ease-in;
+}
+.btn:hover, .btn:focus{
+    background-color: rgb(70, 69, 69);
+}
+.btn:active{
+    position: relative;
+    top: 2px;
+    background-color: black;
+}
+.contacts-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 60px;
+    margin-bottom: 40px;
+}
+
+.contacts-footer {
+    color: #828282;
+}
