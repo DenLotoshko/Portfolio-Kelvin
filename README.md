@@ -27,4 +27,4 @@ This is an adaptive portfolio site called Kelvin. Developed the site with HTML, 
 
 - [Lotoshko Denys]
 
-## License
+
