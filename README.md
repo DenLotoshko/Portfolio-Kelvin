@@ -22,13 +22,9 @@ This is an adaptive portfolio site called Kelvin. Developed the site with HTML, 
 - 3.Copy (data-aos="fade-up") or something you liked and paste into your content.
 - 4.But be careful                                                           
 
-## Distribute
-
-- [Service Name](Page Link)
-
 
 ## Developers
 
-- [Delevoper Name](GitHub Profile Link)
+- [Lotoshko Denys]
 
 ## License
